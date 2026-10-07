@@ -1,4 +1,5 @@
 # vcc_labs
+Étape 1
 # 1. Expliquez, avec vos propres mots, ce qu’est une machine virtuelle.
 Une machine virtuelle est un ordinateur virtuel que tu utilises des ressources d'un ordinateur physique, tu peux utiliser toute les ressources ou seulement une partie pour que sur le même ordinateur ( ou autre) avoir plusieurs machines virtuelles, chacune pouvant utiliser son propre système d'exploitation.
 # 2. Citez deux avantages de la virtualisation dans un environnement professionnel.
@@ -15,3 +16,9 @@ Une machine virtuelle utilise son propre système d'exploitation complet, tandis
 5. Pourquoi les conteneurs sont-ils particulièrement adaptés au déploiement d’applications dans
 le Cloud?
 Puisqu'ils possede tous ce que le code a besoin pour fonctionner (dépendance) et ils sont rapide à démarrer.
+
+Étape 
+1. Pourquoi un Dockerfile est-il préférable à la configuration manuelle d’un conteneur?
+Pour pouvoir le réutiliser, et créer automatiquement avec toutes les étapes. Comme ça quand on le réutilise on a exactement la même configuration.
+3. Quelle différence existe entre une image Docker et un conteneur Docker?
+Une image est comme un template qui contient le code, les dépendances et sa configuration, un conteneur est une instance de l'image. On peut faire plusieurs conteneurs avec une image.
