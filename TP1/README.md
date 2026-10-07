@@ -15,10 +15,18 @@ Un conteneur docker sert a avoir un environnement isolé, l'application, les dé
 Une machine virtuelle utilise son propre système d'exploitation complet, tandis qu'un conteneur partage le système de la machine sur laquelle il s'exécute. Le conteneur est plus rapide à démarrer.
 5. Pourquoi les conteneurs sont-ils particulièrement adaptés au déploiement d’applications dans
 le Cloud?
-Puisqu'ils possede tous ce que le code a besoin pour fonctionner (dépendance) et ils sont rapide à démarrer.
+Puisqu'ils possède tous ce que le code a besoin pour fonctionner (dépendance) et ils sont plus léger et rapide à démarrer.
 
-Étape 
+Étape 3
 1. Pourquoi un Dockerfile est-il préférable à la configuration manuelle d’un conteneur?
 Pour pouvoir le réutiliser, et créer automatiquement avec toutes les étapes. Comme ça quand on le réutilise on a exactement la même configuration.
 3. Quelle différence existe entre une image Docker et un conteneur Docker?
 Une image est comme un template qui contient le code, les dépendances et sa configuration, un conteneur est une instance de l'image. On peut faire plusieurs conteneurs avec une image.
+
+Étape 4
+1. Pourquoi Docker Compose est-il préférable au lancement manuel de plusieurs conteneurs?
+Docker compose est mieux puisqu'il permet de démarrer et gérer plusieurs conteneur de différent service en une seule commande, ça évite de démarrer et configurer chaque contneur manuellement.
+3. Quel est le rôle du fichier "docker-compose.yml"?
+Le rôle du fichier est de décrire les services que l'application utilise ou est dépendante, leur configurations, les dossiers utilisé pour construire les images, les ports exposés et la manière donc les service doivent être lancé entre-eux.
+5. Dans quels cas Docker Compose pourrait-il ses limites?
+Il a des limites si il faut gérer beaucoup de conteneurs, de la haute disponibilités ou un gros déploiement.
