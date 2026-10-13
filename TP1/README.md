@@ -6,27 +6,27 @@ Une machine virtuelle est un ordinateur virtuel que tu utilises des ressources d
 - Elle permet d'utiliser plus efficacement les ressources de l'ordinateur physique, en ayant plusieurs machines virtuelles sur le même ordinateur physique.
 - Elle permet d'isoler les différentes machines virtuelles donc elles ne s'affectent pas entre elles.
 # 3. Quelle différence existe-t-il entre travailler directement sur votre ordinateur et travailler dans une machine virtuelle?
-Quand on travaille directement sur notre ordinateur, on utilise directement son système d'exploitation et ses ressources physiques. Dans une machine virtuelle on utilise son propre système d'exploitation, mais qu'une partie des ressources physiques.
+Quand on travaille directement sur notre ordinateur, on utilise directement son système d'exploitation et ses ressources physiques. Dans une machine virtuelle, on utilise son propre système d'exploitation, mais qu'une partie des ressources physiques.
 
 Étape 2 
 1. Expliquez, avec vos propres mots, ce qu’est un conteneur Docker.
-Un conteneur docker sert a avoir un environnement isolé, l'application, les dépendance dont elle à besoin pour fonctionner. Il permet d'exécuter le code exactement de la même façon sur différente machine.
+Un conteneur docker sert à avoir un environnement isolé, l'application, les dépendances dont elle a besoin pour fonctionner. Il permet d'exécuter le code exactement de la même façon sur différentes machines.
 3. Quelle différence fondamentale existe entre une machine virtuelle et un conteneur?
 Une machine virtuelle utilise son propre système d'exploitation complet, tandis qu'un conteneur partage le système de la machine sur laquelle il s'exécute. Le conteneur est plus rapide à démarrer.
 5. Pourquoi les conteneurs sont-ils particulièrement adaptés au déploiement d’applications dans
-le Cloud?
-Puisqu'ils possède tous ce que le code a besoin pour fonctionner (dépendance) et ils sont plus léger et rapide à démarrer.
+le cloud?
+Puisqu'ils possèdent tous ce que le code a besoin pour fonctionner (dépendance) et ils sont plus léger et rapide à démarrer.
 
 Étape 3
 1. Pourquoi un Dockerfile est-il préférable à la configuration manuelle d’un conteneur?
-Pour pouvoir le réutiliser, et créer automatiquement avec toutes les étapes. Comme ça quand on le réutilise on a exactement la même configuration.
+Pour pouvoir le réutiliser, et créer automatiquement avec toutes les étapes. Comme ça quand on le réutilise, on a exactement la même configuration.
 3. Quelle différence existe entre une image Docker et un conteneur Docker?
 Une image est comme un template qui contient le code, les dépendances et sa configuration, un conteneur est une instance de l'image. On peut faire plusieurs conteneurs avec une image.
 
 Étape 4
 1. Pourquoi Docker Compose est-il préférable au lancement manuel de plusieurs conteneurs?
-Docker compose est mieux puisqu'il permet de démarrer et gérer plusieurs conteneur de différent service en une seule commande, ça évite de démarrer et configurer chaque contneur manuellement.
+Docker compose est mieux puisqu'il permet de démarrer et gérer plusieurs conteneurs de différent service en une seule commande, ça évite de démarrer et configurer chaque conteneur manuellement.
 3. Quel est le rôle du fichier "docker-compose.yml"?
-Le rôle du fichier est de décrire les services que l'application utilise ou est dépendante, leur configurations, les dossiers utilisé pour construire les images, les ports exposés et la manière donc les service doivent être lancé entre-eux.
+Le rôle du fichier est de décrire les services que l'application utilise ou est dépendant, leur configurations, les dossiers utilisés pour construire les images, les ports exposés et la manière donc les services doivent être lancés entre eux.
 5. Dans quels cas Docker Compose pourrait-il ses limites?
-Il a des limites si il faut gérer beaucoup de conteneurs, de la haute disponibilités ou un gros déploiement.
+Il a des limites s’il faut gérer beaucoup de conteneurs, de la haute disponibilité ou un gros déploiement.
